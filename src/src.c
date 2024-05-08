@@ -32,19 +32,19 @@ void displayMenu(void) {
         
         "____________________________________________________________\n"
         "|                                                           |\n"                                                          
-        "|                      Hack the World!                      |\n"   
+        "|                      "GREEN_COLOR"Hack the World!"RESET_COLOR"                      |\n"   
         "|                                                           |\n"   
-        "|    You are a young, newbie hacker trying to earn some     |\n"   
-        "|    illicit money. Hack everything, and show the world     |\n"   
-        "|    what you can do. Give those NSA bastards a lesson!     |\n"   
+        "|    "GREEN_COLOR"You are a young, newbie hacker trying to earn some"RESET_COLOR"     |\n"   
+        "|    "GREEN_COLOR"illicit money. Hack everything, and show the world"RESET_COLOR"     |\n"   
+        "|    "GREEN_COLOR"what you can do. Give those NSA bastards a lesson!"RESET_COLOR"     |\n"   
         "|                                                           |\n"   
-        "|                      Press:                               |\n"   
-        "|                       'S' to start                        |\n"   
-        "|                       'Q' to quit                         |\n"   
+        "|                      "GREEN_COLOR"Press:"RESET_COLOR"                               |\n"   
+        "|                       "LIGHT_BLUE_COLOR"'S' to start"RESET_COLOR"                        |\n"   
+        "|                       "RED_COLOR"'Q' to quit"RESET_COLOR"                         |\n"   
         "|                                                           |\n"
-        "|         And do not forget, stopping your jorney           |\n" 
-        "|         will make NSA to get you, and you will            |\n" 
-        "|         need to start it all over again!                  |\n"
+        "|         "GREEN_COLOR"And do not forget, stopping your jorney"RESET_COLOR"           |\n" 
+        "|         "GREEN_COLOR"will make NSA to get you, and you will"RESET_COLOR"            |\n" 
+        "|         "GREEN_COLOR"need to start it all over again!"RESET_COLOR"                  |\n"
         "|                                                           |\n"     
         "_____________________________________________________________\n"
         
@@ -80,11 +80,11 @@ void displayLoadingBar(int x, int y, char* name, double profit, double exp_gain,
     printf(
     "____________________________________________________________\n"
     "|                                                           |\n"
-    "|     %-50s    |\n"
+    "|     "LIGHT_BLUE_COLOR"%-50s"RESET_COLOR"    |\n"
     "|                                                           |\n"
-    "|       Profit: %-10.2e                                  |\n"
-    "|    Exp. Gain: %-10.2e                                  |\n"
-    "|    Cooldown : %4.2lf                                  |\n"
+    "|       "LIGHT_BLUE_COLOR"Profit: %-10.2e"RESET_COLOR"                                  |\n"
+    "|    "LIGHT_BLUE_COLOR"Exp. Gain: %-10.2e"RESET_COLOR"                                  |\n"
+    "|    "LIGHT_BLUE_COLOR"Cooldown : %4.2lf"RESET_COLOR"                                  |\n"
     "|                                                           |\n"
 
     , name, profit, exp_gain, cooldown
@@ -260,7 +260,7 @@ int main(){
     enterprises[1]->on = AVAILABLE;
 
     enterprises[2]->name = strdup("Blackmail your friend using his furry content");
-    enterprises[2]->description = strdup("You know that he has  a lot of furry content, and he is ashamed of it. Why not use it to your advantage? You'll need a little experience though.");
+    enterprises[2]->description = strdup("You know that he has  ca lot of furry content, and he is ashamed of it. Why not use it to your advantage? You'll need a little experience though.");
     enterprises[2]->profit = 125;
     enterprises[2]->cooldown = 15;
     enterprises[2]->min_experience = 60;
